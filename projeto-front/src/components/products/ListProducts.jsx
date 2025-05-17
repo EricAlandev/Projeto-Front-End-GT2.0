@@ -31,7 +31,7 @@ const Products = [
         { src: "/assets/camisaUrban.jpg" }
       ],
       sizes: ["P", "M", "G"],
-      colors: ["#000000"]
+      colors: ["black"]
     },
     {
       id: "3",
@@ -46,7 +46,7 @@ const Products = [
         { src: "/assets/camisaStreetsBlack.png" }
       ],
       sizes: ["P", "M"],
-      colors: ["#000000"]
+      colors: ["black"]
     },
     {
       id: "4",
@@ -62,7 +62,7 @@ const Products = [
         { src: "/assets/camisaFreedomWhite.jpg" }
       ],
       sizes: ["M", "G"],
-      colors: ["#ffffff"]
+      colors: ["white"]
     },
     {
       id: "5",
@@ -77,7 +77,7 @@ const Products = [
         { src: "/assets/camisaFreedomWhiteRed.jpg" }
       ],
       sizes: ["G", "GG"],
-      colors: ["#ff0000"]
+      colors: ["white", "red"]
     },
     {
       id: "6",
@@ -93,7 +93,7 @@ const Products = [
         { src: "/assets/moletomUrban.jpg" }
       ],
       sizes: ["M", "G", "GG"],
-      colors: ["#333333"]
+      colors: ["black"]
     },
     {
       id: "7",
@@ -108,7 +108,7 @@ const Products = [
         { src: "/assets/moletomUrban&calcaUrban.jpg" }
       ],
       sizes: ["M", "G", "GG"],
-      colors: ["#444444"]
+      colors: ["black"]
     },
     {
       id: "8",
@@ -123,7 +123,23 @@ const Products = [
         { src: "/assets/camisaJoker.jpg" }
       ],
       sizes: ["M", "G"],
-      colors: ["#000"]
+      colors: ["black"]
+    },
+    {
+      id: "9",
+      name: "Dominant Streets",
+      image: "/assets/camisaDominantStreets.jpg",
+      price: 110.99,
+      priceDiscount: 99.99,
+      reference: "JKR0008",
+      stars: 4.6,
+      rating: 165,
+      description: "Para os ousados.",
+      images: [
+        { src: "/assets/camisaJoker.jpg" }
+      ],
+      sizes: ["M", "G"],
+      colors: ["black"]
     },
   ];
   

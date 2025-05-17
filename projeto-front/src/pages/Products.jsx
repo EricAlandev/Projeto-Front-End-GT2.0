@@ -1,11 +1,11 @@
-import ProductListingPage from "../components/compo-products/ProductListing";
+import ProductListing from "../components/compo-products/ProductListing";
 
 
 const Products = () => {
 
     return(
         <>
-            <ProductListingPage />
+            <ProductListing />
         </>
     )
 }

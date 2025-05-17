@@ -61,39 +61,46 @@ const BuyBox = ({
       </div>
 
       {/* Preço */}
-      <div className="price-container" style={{ marginBottom: '20px' }}>
-        {priceDiscount ? (
-          <div className="discounted-price" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <span className="original-price" style={{
-              fontSize: '16px',
-              color: '#CCCCCC',
-              textDecoration: 'line-through'
-            }}>
-              {formatPrice(price)}
-            </span>
-            <span className="current-price" style={{
-              fontSize: '32px',
-              color: '#1F1F1F',
-              fontWeight: 'bold'
-            }}>
-              {formatPrice(priceDiscount)}
-            </span>
-            <span className="discount-badge" style={{
-              backgroundColor: '#C92071',
-              color: 'white',
-              padding: '2px 8px',
-              borderRadius: '4px',
-              fontSize: '14px'
-            }}>
-              {Math.round((1 - priceDiscount/price) * 100)}% OFF
-            </span>
+        <div className="price-container" style={{ marginBottom: '20px' }}>
+          <div className="price-display" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            {priceDiscount ? (
+              <>
+                <span style={{
+                  fontSize: '16px',
+                  color: '#8F8F8F',
+                  textDecoration: 'line-through'
+                }}>
+                  {formatPrice(price)}
+                </span>
+                <span style={{
+                  fontSize: '32px',
+                  color: '#1F1F1F',
+                  fontWeight: 'bold'
+                }}>
+                  {formatPrice(priceDiscount)}
+                </span>
+                <span style={{
+                  backgroundColor: '#C92071',
+                  color: 'white',
+                  padding: '2px 8px',
+                  borderRadius: '4px',
+                  fontSize: '14px'
+                }}>
+                  {Math.round((1 - priceDiscount / price) * 100)}% OFF
+                </span>
+              </>
+            ) : (
+              <span style={{
+                fontSize: '32px',
+                color: '#1F1F1F',
+                fontWeight: 'bold'
+              }}>
+                {formatPrice(price)}
+              </span>
+            )}
           </div>
-        ) : (
-          <span className="normal-price" style={{ fontSize: '32px', color: '#1F1F1F' }}>
-            {formatPrice(price)}
-          </span>
-        )}
       </div>
+
 
       {/* Descrição */}
       <p className="product-description" style={{ fontSize: '14px', color: '#474747', marginBottom: '20px' }}>
@@ -151,7 +158,7 @@ const BuyBox = ({
 
       {/* Botão de Comprar */}
       <button className="buy-button" style={{
-        backgroundColor: '#FFC600',
+        backgroundColor: '#C92071',
         color: 'white',
         fontSize: '16px',
         padding: '15px 30px',
