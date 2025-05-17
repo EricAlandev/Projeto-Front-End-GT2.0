@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Section from '../Section';
 import ProductListing from '../ProductListing';
-import Products from '../products/ListProducts'; // Importe o array completo de produtos
+import Products from './ListProducts'; // Importe o array completo de produtos
 
 const ProductListingPage = () => {
   // Transforme os produtos completos para incluir os campos de filtro mantendo os IDs

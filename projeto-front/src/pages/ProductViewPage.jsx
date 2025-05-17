@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Products from "../components/products/ListProducts";
+import Products from "../components/compo-products/ListProducts";
 import ProductGallery from "../components/ProductGallery";
 import BuyBox from "../components/compo-product-view/BuyBox";
 import ProductCard from "../components/ProductCard";
@@ -21,11 +21,11 @@ export default function ProductViewPage() {
 
   return (
     <div className="px-4 md:px-8 py-10 max-w-screen-xl mx-auto">
-      <div className="flex flex-col md:flex-row gap-10 mb-16">
+      <div className="flex flex-col md:flex-row gap-1 mb-16">
         <div className="md:w-1/2">
           <ProductGallery 
             images={product.images}
-            width="100%"
+            width="85%"
             height="400px"
             radius="8px"
           />
