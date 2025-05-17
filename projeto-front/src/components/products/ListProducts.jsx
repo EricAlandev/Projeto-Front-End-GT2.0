@@ -125,22 +125,6 @@ const Products = [
       sizes: ["M", "G"],
       colors: ["#000"]
     },
-    {
-      id: "9",
-      name: "Camiseta Dominant Streets",
-      image: "/assets/camisaDominantStreets.jpg",
-      price: 159.9,
-      priceDiscount: 129.9,
-      reference: "DOM0009",
-      stars: 4.4,
-      rating: 143,
-      description: "Aposte no estilo dominante.",
-      images: [
-        { src: "/assets/camisaDominantStreets.jpg" }
-      ],
-      sizes: ["G", "GG"],
-      colors: ["#555555"]
-    }
   ];
   
   export default Products;
